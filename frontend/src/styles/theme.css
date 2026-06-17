@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-bg-primary: #050510;
+  --color-bg-secondary: rgba(15, 15, 30, 0.4);
+  --color-bg-card: rgba(20, 25, 50, 0.35);
+  --color-bg-card-hover: rgba(30, 35, 70, 0.45);
+  
+  --color-primary: #00E5FF; /* Neon Cyan */
+  --color-secondary: #8A5CFF; /* Electric Purple */
+  --color-accent: #FF4FD8; /* Pink Glow */
+  
+  --color-success: #00FF9D;
+  --color-warning: #FFC857;
+  --color-error: #FF5D73;
+  
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  
+  /* Borders */
+  --border-glass: 1px solid rgba(255, 255, 255, 0.08);
+  --border-glass-hover: 1px solid rgba(0, 229, 255, 0.4);
+  
+  /* Shadows & Glows */
+  --shadow-glass: 0 10px 40px rgba(0, 0, 0, 0.5);
+  --glow-primary: 0 0 20px rgba(0, 229, 255, 0.2);
+  --glow-secondary: 0 0 20px rgba(138, 92, 255, 0.2);
+  
+  /* Filters */
+  --blur-panel: blur(32px) saturate(200%);
+  --blur-card: blur(24px) saturate(200%);
+  
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Deep Space Cyberpunk flares */
+  background-image: 
+    radial-gradient(ellipse at top left, rgba(138, 92, 255, 0.2), transparent 45%),
+    radial-gradient(ellipse at bottom right, rgba(0, 229, 255, 0.2), transparent 45%),
+    radial-gradient(ellipse at top right, rgba(255, 79, 216, 0.15), transparent 40%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

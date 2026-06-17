@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "store-intelligence"
+version = "0.1.0"
+description = "Retail analytics pipeline processing CCTV footage and exposure of a Store Intelligence API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "--cov=app --cov=pipeline --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["app", "pipeline"]
+omit = ["tests/*"]
